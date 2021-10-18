@@ -21,8 +21,10 @@ def Game(c, p):
         if(p == 'g'):
             return True
          
-      
-while(play!='q'):
+name = input("Enter your name : ")
+round = int(input(("Enter how many rounds you want to play with Computer : ")))    
+draw = won = lost = 0  
+for item in range(round):
     print("*********************************************")
     print("Computer is Choosing...")
     i = random.randint(1, 3)
@@ -33,14 +35,20 @@ while(play!='q'):
         comp = "w"
     if (i == 3):
         comp = "g"
-    player = input("Your turn to Choose :\n1.For Choosing Snake - Press 's'\n2.For Chhosing Water - Press 'w'\n3.For Choosing Gun   - Press 'g'\n")
+    player = input("Your turn to Choose :\n1.For Choosing Snake - Press 's'\n2.For Choosing Water - Press 'w'\n3.For Choosing Gun   - Press 'g'\n")
     result = Game(comp,player)
     print(f"You have Choosed '{player}' and Computer had Choosen '{comp}'")
     if result == None:
         print("The Game was Draw as you both had choosen the same.\n")
+        draw += 1
     if result == True:
         print("You Won!\n")
+        won += 1
     if result == False:
         print("You Lost!\n")
-    play = input("Enter 'q' if you want to Quit playing!\nIf you want to play more hit Enter!\n")
+        lost += 1
+    
+with open("result.txt", "a") as f:
+    f.write(f"{name} played {round} matches and result is : \nWon = {won}\nLost = {lost}\nDraw = {draw}\n*********\n")
+
 
