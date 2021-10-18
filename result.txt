@@ -1,21 +1,8 @@
-avi played 3 matches and result is : 
-Won = 0
-Lost = 1
-Draw = 2
-
-	*********
-
-suman played 3 matches and result is : 
-Won = 0
-Lost = 1
-Draw = 2
-
-	*********
-
-XYZ played 6 matches and result is : 
-Won = 4
-Lost = 0
-Draw = 2
+Date and Time = 2021-10-18 19:59:50.380280
+ABHISHEK played 5 matches and result is : 
+Won = 3
+Lost = 2
+Draw = 0
 
 	*********
 

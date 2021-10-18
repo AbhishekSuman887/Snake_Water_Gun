@@ -1,4 +1,5 @@
 import random
+import datetime
 
 play = "Yes"
 
@@ -49,6 +50,7 @@ for item in range(round):
         lost += 1
     
 with open("result.txt", "a") as f:
-    f.write(f"{name.upper()} played {round} matches and result is : \nWon = {won}\nLost = {lost}\nDraw = {draw}\n\n\t*********\n\n")
+    f.write(f"Date and Time = {datetime.datetime.now()}")
+    f.write(f"\n{name.upper()} played {round} matches and result is : \nWon = {won}\nLost = {lost}\nDraw = {draw}\n\n\t*********\n\n")
 
 
