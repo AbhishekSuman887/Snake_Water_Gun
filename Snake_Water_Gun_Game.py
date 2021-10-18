@@ -25,7 +25,7 @@ name = input("Enter your name : ")
 round = int(input(("Enter how many rounds you want to play with Computer : ")))    
 draw = won = lost = 0  
 for item in range(round):
-    print("*********************************************")
+    print("\n*********************************************\n")
     print("Computer is Choosing...")
     i = random.randint(1, 3)
     print("Computer has Choosen!")
@@ -49,6 +49,6 @@ for item in range(round):
         lost += 1
     
 with open("result.txt", "a") as f:
-    f.write(f"{name} played {round} matches and result is : \nWon = {won}\nLost = {lost}\nDraw = {draw}\n*********\n")
+    f.write(f"{name.upper()} played {round} matches and result is : \nWon = {won}\nLost = {lost}\nDraw = {draw}\n\n\t*********\n\n")
 
 

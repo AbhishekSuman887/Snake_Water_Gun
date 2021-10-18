@@ -1,20 +1,21 @@
-Avi played 5 mateches and result is : 
+avi played 3 matches and result is : 
 Won = 0
-Lost = 5
-Draw = 0
-*********
-g played 5 mateches and result is : 
-Won = 0
-Lost = 3
+Lost = 1
 Draw = 2
-*********
-avi played 10 matches and result is : 
-Won = 2
-Lost = 4
-Draw = 4
-*********
-raunak played 5 matches and result is : 
-Won = 1
-Lost = 3
-Draw = 1
-*********
+
+	*********
+
+suman played 3 matches and result is : 
+Won = 0
+Lost = 1
+Draw = 2
+
+	*********
+
+XYZ played 6 matches and result is : 
+Won = 4
+Lost = 0
+Draw = 2
+
+	*********
+
